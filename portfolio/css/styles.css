@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color:rgb(77, 25, 70);
+  color:antiquewhite;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.brand {
+  margin-top: -7px;
+}
+.brand span {
+  color:rgb(200, 130, 214);
+}
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  color:aliceblue;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.menu .active {
+  color:rgb(200, 130, 214);
+}
+.menu a:hover {
+  background-color:rgb(200, 130, 214);
+  color:antiquewhite;
+  transition: ease-in .4s;
+}
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+
+}
+h1 {
+  font-size: 3em;
+}
+span {
+  color:rgb(200, 130, 214);
+}
+
+.download-cv {
+  padding: 10px 20px ;
+  background-color: #c882d6;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(rgb(186, 77, 219), rgb(77, 25, 70),black , rgb(151, 51, 138));
+}
+
+.download-cv:hover {
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.main img {
+
+  width: 350px;
+  height: 520px;
+  z-index: 1;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  width: 100vw;
+  align-items: center;
+}
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+
+}
+.about-info {
+
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color:rgb(77, 25, 70);
+}
+
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: rgb(186, 77, 219);
+  margin-top: 10px;
+  margin-bottom: 2.5em;
+}
+
+.portfolio {
+  width: 100%;
+  background-color:#4d1946;
+  color:#fff;
+}
+
+.portfolio-headings {
+  width: 100xw;
+  padding: 5em;
+}
+.portfolio-headings h2 {
+ font-size: 2.5em; 
+}
+
+.portfolio .container {
+  width: 80vw;
+ height: 80vh;
+ margin: 0 auto;
+ display: flex; 
+ justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  color:#fff;
+  background-color: rgb(112, 39, 102);
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/2-original.png) ;
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-links a {
+  color:#fff;
+  text-decoration: none;
+}
+
+.project-links i {
+  font-size: 1.5em;
+}
+
+.card .project-details {
+  margin: 0 auto;
+  margin: 1em;
+  width: 70%;
+
+}
+.card .project-details a {
+  text-decoration: none;
+  color:rgb(77, 25, 70);
+  text-transform: uppercase;
+}
+
+.project-details-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.contact-headings h2 {
+  font-size: 2em;
+  color:#4d1946;
+}
+
+.container-contact {
+  padding: 2em;
+  margin: 0 auto;
+}
+.container-contact img{
+  width: 500px;
+  bottom: 0px;
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+
+.contact-form {
+  color:#4d1946;
+}
+
+.form input {
+  color:#4d1946;
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #4d1946;
+}
+
+.form textarea {
+  height: 150px;
+  background: none;
+  color:#4d1946;
+  padding: 1.5em;
+  border: 1px solid #4d1946;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border: none;
+  text-transform: uppercase;
+  background-color: #c882d6;
+  box-shadow: 1px 3px 11px -5px rgba(rgb(186, 77, 219), rgb(77, 25, 70),black , rgb(151, 51, 138));
+}
+
+.btn-submit:hover {
+  background-color: #e6acf1;
+  box-shadow: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  background-color: #4d1946;
+}
+
+.footer-content h2{
+  font-size: 2em;
+}
+
+.sotial-network i {
+  font-size: 2em;
+  color: #4d1946;
+}
+
+.sotial-network {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 2em;
+  color: #4d1946;
+}
+
